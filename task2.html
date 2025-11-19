@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Русские маршруты — экскурсии по России</title>
+  <!-- Подключение стилей из внешнего файла -->
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+<!-- Блок 1: Меню и «О проекте» -->
+<header>
+  <div class="container">
+    <nav>
+      <ul style="display: flex; list-style: none; gap: 20px; margin-bottom: 30px;">
+        <li><a href="#projects">Проекты</a></li>
+        <li><a href="#directions">Направления</a></li>
+        <li><a href="#gallery">Галерея</a></li>
+        <li><a href="#planning">Планирование</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <section id="about">
+      <h2>О проекте</h2>
+      <p>Мы организуем авторские экскурсии по городам России — от Калининграда до Владивостока. Наши гиды — местные историки, краеведы и фотографы. Предлагаем пешие прогулки, автобусные туры и квесты для семей. Каждый маршрут — это история, которую хочется пережить снова.</p>
+    </section>
+  </div>
+</header>
+
+
+<!-- Блок 2: Таблица экскурсий -->
+<section id="table">
+  <div class="container">
+    <h2>Что посмотреть и когда ехать</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Город / Маршрут</th>
+          <th>Популярные экскурсии</th>
+          <th>Лучшее время для посещения</th>
+          <th>Стоимость (руб.)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Санкт‑Петербург</td>
+          <td>«Дворцы и каналы» (пешая)</td>
+          <td>Май–сентябрь</td>
+          <td><strong>1 500</strong></td>
+        </tr>
+        <tr>
+          <td>Москва</td>
+          <td>«Кремль и Красная площадь»</td>
+          <td>Круглый год</td>
+          <td><strong>1 200</strong></td>
+        </tr>
+        <tr>
+          <td>Казань</td>
+          <td>«Татарская слобода: вкусы и легенды»</td>
+          <td>Июнь–август</td>
+          <td><strong>1 800</strong></td>
+        </tr>
+        <tr>
+          <td>Великий Новгород</td>
+          <td>«Древний город у Волхова»</td>
+          <td>Апрель–октябрь</td>
+          <td><strong>1 000</strong></td>
+        </tr>
+        <tr>
+          <td>Сочи</td>
+          <td>«Горные тропы Красной Поляны»</td>
+          <td>Май–ноябрь</td>
+          <td><strong>2 500</strong></td>
+        </tr>
+        <tr>
+          <td>Ярославль</td>
+          <td>«Золотое кольцо: сердце Волги»</td>
+          <td>Июль–сентябрь</td>
+          <td><strong>1 300</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Блок 3: Галерея -->
+<section id="gallery">
+  <div class="container">
+    <h2>Вдохновитесь маршрутами</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="foto1.jpg"class="img-same" alt="Ночь белых ночей в Петербурге">
+        <h3>«Ночь белых ночей в Петербурге»</h3>
+        <p>Пешая прогулка, 3 часа</p>
+      </div>
+      <div class="card">
+        <img src="foto2.jpg"class="img-same" alt="Тайны московского метро">
+        <h3>«Тайны московского метро»</h3>
+        <p>Экскурсия с архитектором, 2 часа</p>
+      </div>
+      <div class="card">
+        <img src="foto3.jpg"class="img-same" alt="Казань: от мечети до кремля">
+        <h3>«Казань: от мечети до кремля»</h3>
+        <p>Автобусный тур, 4 часа</p>
+      </div>
+      <div class="card">
+        <img src="foto4.jpg"class="img-same" alt="Новгород: голос древности">
+        <h3>«Новгород: голос древности»</h3>
+        <p>Квест для семьи, 2,5 часа</p>
+      </div>
+      <div class="card">
+        <img src="foto5.jpg" class="img-same"alt="Сочи: джунгли Кавказа">
+        <h3>«Сочи: джунгли Кавказа»</h3>
+        <p>Треккинг, 5 часов</p>
+      </div>
+      <div class="card">
+        <img src="foto6.jpg"class="img-same" alt="Ярославль: купцы и фрески">
+        <h3>«Ярославль: купцы и фрески»</h3>
+        <p>Пешая, 3 часа</p>
+      </div>
+    </div>
+  </div>
+</section> 
+<!-- Блок 4: Форма планирования -->
+<section id="planning">
+  <div class="container">
+    <h2>Спланируйте свою экскурсию</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Иван Иванов" required>
+      <input type="email" name="email" placeholder="ivan@example.com" required>
+
+      <select name="direction" required>
+        <option value="">Выберите направление</option>
+        <option value="spb">Санкт‑Петербург</option>
+        <option value="msk">Москва</option>
+        <option value="kazan">Казань</option>
+        <option value="novgorod">Великий Новгород</option>
+        <option value="sochi">Сочи</option>
+        <option value="yaroslavl">Ярославль</option>
+      </select>
+
+      <div>
+        <label><input type="checkbox" name="tour_type" value="foot"> Пешая прогулка</label>
+        <label><input type="checkbox" name="tour_type" value="bus"> Автобусный тур</label>
+        <label><input type="checkbox" name="tour_type" value="quest"> Квест для семьи</label>
+        <label><input type="checkbox" name="tour_type" value="individual"> Индивидуальная экскурсия</label>
+      </div>
+
+      <div>
+        <label><input type="checkbox" name="services" value="photo"> Фотосъёмка</label>
+        <label><input type="checkbox" name="services" value="audio"> Аудиогид</label>
+        <label><input type="checkbox" name="services" value="transfer"> Трансфер</label>
+        <label><input type="checkbox" name="services" value="lunch"> Обед в местном кафе</label>
+      </div>
+
+      <textarea name="comments" placeholder="Хочу увидеть скрытые дворы Петербурга…" rows="4"></textarea>
+
+
+      <button type="submit" class="btn-primary">Отправить заявку</button>
+      <button type="reset" class="btn-secondary">Очистить форму</button>
+    </form>
+  </div>
+</section>
+<!-- Блок 5: Контакты -->
+<footer id="contacts">
+  <div class="container">
+    <h2>Свяжитесь с нами</h2>
+    <ul style="list-style: none; padding: 0;">
+      <li><strong>Телефон:</strong> <a href="tel:+78001234567">+7 (800) 123‑45‑67</a></li>
+      <li><strong>E‑mail:</strong> <a href="mailto:info@rus-excursions.ru">info@rus-excursions.ru</a></li>
+      <li><strong>Адрес:</strong> г. Москва, ул. Тверская, д. 15, оф. 101</li>
+      <li><strong>Часы работы:</strong> Пн–Пт: 9:00–18:00</li>
+    </ul>
+
+
+    <!-- Карта (миниатюра) -->
+    <div style="margin: 20px 0; height: 200px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center;">
+      <p>Карта с местоположением офиса</p>
+    </div>
+
+
+    <!-- Соцсети -->
+    <div>
+      <strong>Мы в соцсетях:</strong>
+      <a href="#" style="margin-right: 10px;">VK</a>
+      <a href="#" style="margin-right: 10px;">Telegram</a>
+      <a href="#">YouTube</a>
+    </div>
+  </div>
+</footer>
